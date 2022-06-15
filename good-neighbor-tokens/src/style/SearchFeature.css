@@ -1,0 +1,21 @@
+.SearchFeature{
+    height:500px;
+    width: 200px;
+    margin: auto;
+    /* border: 2cm solid black; */
+}
+
+.searchUserButton{
+    height:25px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    color:black;
+    padding: 0;
+    display: inline;
+}
+
+.favoriteButton{
+    display: inline;
+    margin-left: 200px;
+}

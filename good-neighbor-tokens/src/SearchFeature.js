@@ -1,26 +1,59 @@
 import React from "react";
+import {useState} from "react";
+import {employeeData} from "./data/employeeData.js"
+import "./style/SearchFeature.css";
 
 
 
-class SearchFeature extends React.Component{
+function SearchFeature(){
 
-  constructor(props) {
-      super(props);
-    }
+      const [query, setQuery] = useState("")
 
-
-
-
-  render(){
       return <div className="SearchFeature">
-        <div class="topnav">
-          <a class="active" href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <input type="text" placeholder="Search.."></input>
+        <div className="SearchField">
+        <input placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
+
+
+        {
+          employeeData.filter(data => {
+            if (query === '') {
+              return data;
+            } else if (data.username.toLowerCase().includes(query.toLowerCase())) {
+              return data;
+            }
+          }).map((data, key) => (
+            <div key={key}>
+              <button className="searchUserButton" value={data.username}>{data.username}</button>
+              <button className="favoriteButton">Favorite?</button>
+            </div>
+          ))
+        }
+
+
+{/* 
+        {employeeData.map((data, key) => {
+            return (
+              <div key={key}>
+                {data.username +" , " +data.tokenCount}
+              </div>
+            );
+        })}
+
+        {employeeData.filter(data => {
+          if (query === "") {
+            //if query is empty
+            return data;
+          } else if (data.username.toLowerCase().includes(query.toLowerCase())) {
+            //returns filtered array
+            return data;
+          }   
+        })} */}
+
+
+
+
         </div>
       </div>;
-  }
 }
 
 
