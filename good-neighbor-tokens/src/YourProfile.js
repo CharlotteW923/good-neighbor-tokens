@@ -7,27 +7,16 @@ class YourProfile extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = {
-            usename: profile.username,
-            tokenCount: profile.tokenCount
-         };
       }
-
-
-    componentDidMount(){
-        this.setState(state, (() => "dumb"))
-    }
 
 
     render(){
         return <div className="App">
-            <header className="App-header">
-            </header>
-            <div className="profileInfo">
-                {this.state.usename}
+            <div>
+                {this.props.name}
             </div>
-            <div className="profileInfo">
-            {this.state.tokenCount}
+            <div>
+                {this.props.tokenCount}
             </div>
         </div>;
     }
