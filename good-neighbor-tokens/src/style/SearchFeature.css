@@ -1,21 +1,24 @@
 .SearchFeature{
     height:500px;
-    width: 200px;
+    width: 400px;
     margin: auto;
-    /* border: 2cm solid black; */
 }
 
 .searchUserButton{
-    height:25px;
-    width: 200px;
-    margin: auto;
-    text-align: center;
-    color:black;
-    padding: 0;
-    display: inline;
+    width: 75%;
+    float: left;
+    padding: 20px;
 }
 
+
 .favoriteButton{
-    display: inline;
-    margin-left: 200px;
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+
+.searchUserContainer{
+    border: 3px solid #fff;
+    padding: 10px;
 }
