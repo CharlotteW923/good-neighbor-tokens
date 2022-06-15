@@ -4,7 +4,7 @@ import './App.css';
 import {profile} from "./data/userData.js"
 import YourProfile from "./YourProfile.js";
 import SearchFeature from "./SearchFeature.js"
-
+import FavoriteList from "./FavoriteList.js";
 
 
 class App extends React.Component{
@@ -22,10 +22,13 @@ class App extends React.Component{
 
       return <div className="App">
                 <div className="coreComponents">
-                  <YourProfile name={this.state.username} tokenCount={this.state.tokenCount} />
+                  <YourProfile />
                 </div>
                 <div className="coreComponents">
-                  <SearchFeature name={this.state.username} tokenCount={this.state.tokenCount} />
+                  <SearchFeature favoriteList={FavoriteList} />
+                </div>
+                <div className="coreComponents">
+                  <FavoriteList favoriteList={FavoriteList}/>
                 </div>
              </div>;
   }

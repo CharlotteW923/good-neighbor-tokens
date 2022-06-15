@@ -1,16 +1,14 @@
 
 import {employeeData} from "./data/employeeData.js"
 
-function EmployeeList() {
+function FavoriteList() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
         <div className="employee-container">
           {employeeData.map((data, key) => {
             return (
               <div key={key}>
-                {data.username +" , " +data.tokenCount}
+                {data.username +" , " +data.favorite}
               </div>
             );
           })}
@@ -21,5 +19,5 @@ function EmployeeList() {
 
 
 
-export default EmployeeList;
+export default FavoriteList;
 

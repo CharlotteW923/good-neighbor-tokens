@@ -1,18 +1,25 @@
 export var employeeData = [
         {
-            "username":"user1",
-            "tokenCount": 1
+            "username":"Kevin",
+            "tokenCount": 1,
+            "favorite": false
         },
         {
-            "username":"user2",
-            "tokenCount": 2
+            "username":"Doris",
+            "tokenCount": 1,
+            "favorite": false
+
         },
         {
-            "username":"user3",
-            "tokenCount": 3
+            "username":"Steve",
+            "tokenCount": 1,
+            "favorite": false
+
         },
         {
-            "username":"user4",
-            "tokenCount": 4
+            "username":"Miley",
+            "tokenCount": 1,
+            "favorite": false
+
         }
 ]
