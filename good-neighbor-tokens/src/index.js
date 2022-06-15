@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
+import YourProfile from './YourProfile';
+import SearchFeature from './SearchFeature';
+import EmployeeList from './EmployeeList';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <YourProfile/>
+    <SearchFeature />
+    <EmployeeList />
   </React.StrictMode>
 );
 
