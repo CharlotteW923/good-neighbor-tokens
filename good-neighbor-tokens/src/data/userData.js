@@ -1,4 +1,4 @@
 export var profile = {
-    "username":"TheRealUser",
-    "tokenCount":10
+    "username":"Jake",
+    "tokenCount":100
 }

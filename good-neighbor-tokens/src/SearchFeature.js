@@ -16,8 +16,8 @@ function SearchFeature(){
       }
 
       return <div className="SearchFeature">
-        <div className="SearchField">
-        <input placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
+        <div className="AliasSearch">
+        <input className="AliasSearchField" placeholder="Enter Alias Here" onChange={event => setQuery(event.target.value)} />
         {
           employeeData.filter(data => {
             if (query === '') {

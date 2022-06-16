@@ -1,0 +1,19 @@
+#username{
+    width: 50%;
+    float: left;
+    padding: auto;
+    padding-top: 10%;
+}
+
+#tokenCount{
+    width: 50%;
+    float: left;
+    padding: auto;
+    padding-top: 10%;
+}
+
+.YourProfile{
+    height:100px;
+    width: 400px;
+    margin: auto;
+}
