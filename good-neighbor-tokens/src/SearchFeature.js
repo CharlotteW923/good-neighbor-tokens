@@ -4,7 +4,8 @@ import {employeeData} from "./data/employeeData.js"
 import "./style/SearchFeature.css";
 import Popup from "./Popup.js";
 import FavoriteList from "./FavoriteList.js";
-
+import Button from '@material-ui/core/Button';
+import StarIcon from '@mui/icons-material/Star';
 
 function SearchFeature(){
       const [query, setQuery] = useState("")
@@ -44,7 +45,7 @@ function SearchFeature(){
                 user={userName}                
                 handleClose = {togglePopup}/>}
 
-              <button className="favoriteButton" value={data.username} onClick={f => {AddToFavorite(f)}}>Favorite {data.username}?</button>
+              <button variant = 'contained' color = 'primary' startIcon ={<StarIcon />} className="favoriteButton" value={data.username} onClick={f => {AddToFavorite(f)}}>Favorite {data.username}?</button>
             </div>
           ))
         }

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import {employeeData} from "./data/employeeData.js"
 import {favoritesData} from "./data/favorites.js"
 import "./style/SearchFeature.css";
+import Button from '@material-ui/core/Button';
+import StarIcon from '@mui/icons-material/Star';
 
 
 

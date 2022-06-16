@@ -1,20 +1,28 @@
 .SearchFeature{
     height:500px;
-    width: 400px;
+    width: 600px;
     margin: auto;
 }
 
 .searchUserButton{
-    width: 75%;
+    width: 60%;
     float: left;
     padding: 20px;
+
+
+    background-image: url("../images/profileIcon.webp");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+    
 }
 
 
 .favoriteButton{
     width: 25%;
     float: left;
-    padding: 20px;
+    padding: 30px;
+    padding-right:5%
 }
 
 
