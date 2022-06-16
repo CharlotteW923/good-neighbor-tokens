@@ -1,41 +1,45 @@
 import React, {Component} from "react";
 import {employeeData} from "./data/employeeData.js"
+import {favoritesData} from "./data/favorites.js"
 import "./style/SearchFeature.css";
 
-class FavoriteList extends Component {
-
-  constructor(props) { super(props); this.state = { count: this.props.count } } 
 
 
-  increment(){
-    console.log("this.props.count");
-    console.log(this.props.count);
-    let count = this.state.count;
-    count.push("new element");
-    this.setState({ count: count}) 
-  } 
+const FavoriteList = props => {
 
-  render(){
-    return (
-      <div className="Favorite">
-          <div className="employee-container">
-          {
-            employeeData.filter(data => {
-              if (data.favorite == true) {
-                return data.username;
-              }
-            }).map((data, key) => (
-              <div className="searchUserContainer" key={key}>
-                <button className="searchUserButton">{data.username}</button>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    );
+
+  var isInFavorites = false;
+
+
+  for(var i = 0; i < favoritesData.length; i++){
+    if(favoritesData[i].username === props.favoritedUser){
+      isInFavorites = true;
+    }
   }
+
+
+  if(isInFavorites == false){
+        favoritesData.push(
+          {
+            "username":props.favoritedUser
+          }
+        )
+  }
+
+
+  return <div>
+  {
+    favoritesData.map((fData, key) => (
+      <div key={key}>
+        {fData.username}
+      </div>
+    ))
+  }
+
+  </div>
+
+
+
 }
 
-
 export default FavoriteList;
-
