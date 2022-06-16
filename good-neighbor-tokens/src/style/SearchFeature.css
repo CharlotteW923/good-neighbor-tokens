@@ -8,6 +8,14 @@
     width: 75%;
     float: left;
     padding: 20px;
+
+
+    background-image: url("../images/profileIcon.webp");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+    background-clip:padding-box
+
 }
 
 

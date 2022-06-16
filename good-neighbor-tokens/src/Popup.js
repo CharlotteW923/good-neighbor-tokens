@@ -6,7 +6,7 @@ const Popup = props => {
     function getData(val){
         setData(val.target.value)
         setPrint(false)
-        console.warn(val.target.value)
+
     }
 
     return (

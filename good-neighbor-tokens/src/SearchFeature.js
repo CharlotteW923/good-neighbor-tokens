@@ -5,7 +5,6 @@ import "./style/SearchFeature.css";
 import Popup from "./Popup.js";
 import FavoriteList from "./FavoriteList.js";
 
-
 function SearchFeature(){
       const [query, setQuery] = useState("")
       const [isOpen, setIsOpen] = useState(false);
