@@ -5,20 +5,19 @@ import {profile} from "./data/userData.js"
 import YourProfile from "./YourProfile.js";
 import SearchFeature from "./SearchFeature.js"
 import FavoriteList from "./FavoriteList.js";
+import Popup from './Popup';
+import {useState} from 'react';
+import './style.css';
 
 
-class App extends React.Component{
-
-  constructor(props) {
-      super(props);
-      this.state = {
-        username: profile.username,
-        tokenCount: profile.tokenCount
-     };
-    }
+function App(){
 
 
-  render(){
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () =>{
+    setIsOpen(!isOpen);
+  }
 
       return <div className="App">
                 <div className="coreComponents">
@@ -30,9 +29,18 @@ class App extends React.Component{
                 <div className="coreComponents">
                   <FavoriteList favoriteList={FavoriteList}/>
                 </div>
+
+                <button onClick={togglePopup}>Send a message</button>
+                {isOpen && <Popup 
+                content ={<>
+                  <b>New Message</b>
+                  <p>This is sample content</p>
+                  </>}
+                
+                handleClose = {togglePopup}/>}
+
              </div>;
   }
-}
 
 
 
