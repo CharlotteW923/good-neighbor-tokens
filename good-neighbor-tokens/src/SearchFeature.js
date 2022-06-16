@@ -32,7 +32,7 @@ function SearchFeature(){
                 {isOpen && <Popup 
                 content ={<>
                   <b>New Message</b>
-                  <p>This is sample content</p>
+                  <p></p>
                   </>}
                 
                 handleClose = {togglePopup}/>}
