@@ -1,11 +1,11 @@
 .SearchFeature{
     height:500px;
-    width: 400px;
+    width: 600px;
     margin: auto;
 }
 
 .searchUserButton{
-    width: 75%;
+    width: 60%;
     float: left;
     padding: 20px;
 
@@ -14,15 +14,15 @@
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-blend-mode:hard-light;
-    background-clip:padding-box
-
+    
 }
 
 
 .favoriteButton{
     width: 25%;
     float: left;
-    padding: 20px;
+    padding: 30px;
+    padding-right:5%
 }
 
 

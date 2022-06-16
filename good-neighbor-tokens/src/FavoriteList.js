@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {employeeData} from "./data/employeeData.js"
 import "./style/SearchFeature.css";
+import Button from '@material-ui/core/Button';
+import StarIcon from '@mui/icons-material/Star';
 
 class FavoriteList extends Component {
 
@@ -26,7 +28,7 @@ class FavoriteList extends Component {
               }
             }).map((data, key) => (
               <div className="searchUserContainer" key={key}>
-                <button className="searchUserButton">{data.username}</button>
+                <Button className="searchUserButton">{data.username}</Button>
               </div>
             ))
           }
