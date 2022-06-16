@@ -24,10 +24,10 @@ function App(){
                   <YourProfile />
                 </div>
                 <div className="coreComponents">
-                  <SearchFeature favoriteList={FavoriteList} />
+                  <SearchFeature />
                 </div>
                 <div className="coreComponents">
-                  <FavoriteList favoriteList={FavoriteList}/>
+                  <FavoriteList />
                 </div>
 
                 <button onClick={togglePopup}>Send a message</button>
